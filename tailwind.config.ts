@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/core/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -13,6 +14,28 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { 
+            transform: 'rotate(-1deg) translateY(10px)' ,
+          },
+          '50%': { 
+            transform: 'rotate(3deg) translateY(0px)',
+           },
+        },
+        wiggle2: {
+          '0%, 100%': { 
+            transform: 'translateY(10px) rotate(-6deg)',
+          },
+          '50%': { 
+            transform: 'translateY(0) rotate(3deg)'
+           },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 4s ease-in-out infinite',
+        wiggle2: 'wiggle2 6s ease-in-out infinite',
+      }
     },
   },
   plugins: [],
