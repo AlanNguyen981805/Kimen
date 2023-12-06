@@ -1,10 +1,13 @@
 import dynamic from "next/dynamic";
 
-export const Box1 = "./Box1" 
-export const Box2  = "./Box2"
-export const SwitchLocale = './SwtichLocale'
-export const Section  = "./Section.tsx";
-export const Section2  = "./Section2";
-export const Section3 = "./Section3";
-export const Process = "./Process";
-export const ProcessCircle = "./ProcessCircle";
+// Dynamic imports for components
+export const Box1 = dynamic(() => import("./Box1"));
+export const Box2 = dynamic(() => import("./Box2"));
+export const SwitchLocale = dynamic(() => import("./SwtichLocale"));
+export const Section = dynamic(() => import("./Section"));
+export const Section2 = dynamic(() => import("./Section2"));
+export const Section3 = dynamic(() => import("./Section3"));
+export const Process = dynamic(() => import("./Process"));
+export const ProcessCircle = dynamic(() => import("./ProcessCircle"));
+export const Slider = dynamic(() => import("./Slider"));
+export const Timeline = dynamic(() => import("./TimeLine"));

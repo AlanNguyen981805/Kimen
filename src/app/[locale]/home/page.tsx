@@ -1,7 +1,4 @@
-import Process from "@/components/Process";
-import Section from "@/components/Section";
-import Section2 from "@/components/Section2";
-import Section3 from "@/components/Section3";
+import { Process, Section, Section2, Section3 } from "@/components";
 import Image from "next/image";
 import React from "react";
 
@@ -61,16 +58,19 @@ const Home = () => {
       <Section2 />
 
       <div className="mt-16">
-      <Section />
+        <Section />
       </div>
 
-      <Process />
-      
-      <Section3  image="/products/Main-home-img4.jpg" />
+      <div className="flex flex-col justify-center items-center py-[100px] bg-[#F3EEE9] mt-20">
+        <span className="text-xl">The cultivation process</span>
+        <h3 className="text-[36px] tracking-[3px]">OUR GARDEN PROGRESS</h3>
 
-      <Section3  image="/products/Main-home-img4.jpg" reverse/>
+        <Process />
+      </div>
 
-      
+      <Section3 image="/products/Main-home-img4.jpg" />
+
+      <Section3 image="/products/Main-home-img4.jpg" reverse />
     </>
   );
 };
