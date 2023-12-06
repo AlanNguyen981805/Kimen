@@ -1,4 +1,7 @@
-import { Process, Section, Section2, Section3 } from "@/components";
+import Process from "@/components/Process";
+import Section from "@/components/Section";
+import Section2 from "@/components/Section2";
+import Section3 from "@/components/Section3";
 import Image from "next/image";
 import React from "react";
 
