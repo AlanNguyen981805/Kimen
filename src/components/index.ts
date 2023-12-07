@@ -11,3 +11,6 @@ export const Process = dynamic(() => import("./Process"));
 export const ProcessCircle = dynamic(() => import("./ProcessCircle"));
 export const Slider = dynamic(() => import("./Slider"));
 export const Timeline = dynamic(() => import("./TimeLine"));
+export const Map = dynamic(() => import("./Map"), { ssr: false });
+export const RightContact = dynamic(() => import("./RightContact"));
+export const Menu = dynamic(() => import("./Menu"));
