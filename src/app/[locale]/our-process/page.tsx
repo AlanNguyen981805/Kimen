@@ -2,8 +2,8 @@ import { Process, Section, Section2 } from "@/components";
 
 const OurHistory = () => {
   return (
-    <div>
-      <div className="bg-[#f3eee9] h-[270px] flex items-center flex-col justify-center">
+    <div className="translate-y-[100px]">
+      <div className="bg-[#f3eee9] h-[270px] flex items-center flex-col justify-center ">
         <span className="text-lg">More to know now</span>
         <h6 className="text-5xl tracking-[4px] uppercase">OUR PROCESS</h6>
       </div>

@@ -14,27 +14,27 @@ export type IMenu = {
 export const MENUS: IMenu[] = [
   {
     key: 1,
-    title: "Home",
+    title: "home",
     link: "/home",
   },
   {
     key: 2,
-    title: "About us",
+    title: "about_us",
     link: "/about-us",
   },
   {
     key: 3,
-    title: "Our Process",
+    title: "our_process",
     link: "/our-process",
   },
   {
     key: 4,
-    title: "Our History",
+    title: "our_history",
     link: "/our-history",
   },
   {
     key: 4,
-    title: "Contact Us",
+    title: "contact_us",
     link: "/contact-us",
   },
 ];

@@ -4,7 +4,7 @@ import Image from "next/image";
 const ContactUs = () => {
   return (
     <>
-      <div className="relative h-[500px] flex items-center justify-center">
+      <div className="relative h-[500px] flex items-center justify-center translate-y-[100px]">
         <Image
           src={"/About-us-TA-parallax.jpg"}
           fill

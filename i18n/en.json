@@ -5,5 +5,12 @@
   "Common": {
     "en": "Tiếng Anh",
     "vi": "Tiếng Việt"
+  },
+  "Menu": {
+    "home": "Home",
+    "about_us": "About Us",
+    "our_process": "Our Process",
+    "our_history": "Our History",
+    "contact_us": "Contact us"
   }
 }

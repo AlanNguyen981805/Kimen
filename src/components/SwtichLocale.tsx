@@ -1,24 +1,40 @@
-"use client"
+"use client";
 
-import { usePathname, useRouter } from '@/navigation';
-import React, { useTransition } from 'react';
+import { usePathname, useRouter } from "@/navigation";
+import Image from "next/image";
+import { useTransition } from "react";
 
-const SwtichLocale = ({titleBtn1, titleBtn2}: {titleBtn1: string, titleBtn2: string}) => {
-    const router = useRouter();
-  const [isPending, startTransition] = useTransition();
+const SwtichLocale = () => {
+  const router = useRouter();
+  const [_, startTransition] = useTransition();
   const pathname = usePathname();
 
-    const onSwichLocale = (data: string) => {
-        startTransition(() => {
-            router.replace(pathname, {locale: data});
-          });
-    }
-    return (
-        <div>
-            <button className='px-4 py-2 bg-red-400 rounded-sm' onClick={() => onSwichLocale('en')}>{titleBtn1}</button>
-            <button className='px-4 py-2 bg-blue-300 rounded-sm' onClick={() => onSwichLocale('vi')}>{titleBtn2}</button>
-        </div> 
-    );
+  const onSwichLocale = (data: string) => {
+    startTransition(() => {
+      router.replace(pathname, { locale: data });
+    });
+  };
+
+  return (
+    <div className="flex items-center gap-1">
+      <Image
+        width={30}
+        height={30}
+        src={"/svgs/vietnam.svg"}
+        className="cursor-pointer"
+        alt="vietnam"
+        onClick={() => onSwichLocale("vi")}
+      />
+      <Image
+        width={30}
+        height={30}
+        src={"/svgs/england.svg"}
+        className="cursor-pointer"
+        alt="vietnam"
+        onClick={() => onSwichLocale("en")}
+      />
+    </div>
+  );
 };
 
 export default SwtichLocale;

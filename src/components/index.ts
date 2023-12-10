@@ -1,8 +1,6 @@
 import dynamic from "next/dynamic";
 
 // Dynamic imports for components
-export const Box1 = dynamic(() => import("./Box1"));
-export const Box2 = dynamic(() => import("./Box2"));
 export const SwitchLocale = dynamic(() => import("./SwtichLocale"));
 export const Section = dynamic(() => import("./Section"));
 export const Section2 = dynamic(() => import("./Section2"));
@@ -14,3 +12,6 @@ export const Timeline = dynamic(() => import("./TimeLine"));
 export const Map = dynamic(() => import("./Map"), { ssr: false });
 export const RightContact = dynamic(() => import("./RightContact"));
 export const Menu = dynamic(() => import("./Menu"));
+export const ListMenuItem = dynamic(() => import("./ListMenuItem"));
+export const WrapMenu = dynamic(() => import("./WrapMenu"));
+export const RenderTitleMenu = dynamic(() => import("./RenderTitleMenu"));

@@ -4,7 +4,7 @@ import Image from "next/image";
 const OurHistory = () => {
   return (
     <div>
-      <div className="relative h-[500px]">
+      <div className="relative h-[500px] translate-y-[100px]">
         <Image
           src={"/About-us-TA-parallax.jpg"}
           fill
@@ -13,7 +13,7 @@ const OurHistory = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center justify-center py-20 gap-4 w-1/4 mx-auto">
+      <div className="flex flex-col items-center justify-center py-20 gap-4 w-1/3 mt-10 mx-auto">
         <span className="text-xl text-[#4B4B4B] ">Organica Seeds Growth</span>
         <h6 className="tracking-[3px] text-3xl text-[#000] uppercase">
           A PLACE WITH HISTORY

@@ -1,15 +1,15 @@
-import { Menu } from "@/components";
+import { Menu, WrapMenu } from "@/components";
 import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center  px-10">
+    <WrapMenu>
       <div>
         <Image src={"/logo.jpg"} width={100} height={50} alt="logo" />
       </div>
-      
+
       <Menu />
-    </div>
+    </WrapMenu>
   );
 };
 

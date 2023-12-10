@@ -5,5 +5,12 @@
     "Common": {
       "en": "English",
       "vi": "Vietnamese"
+    },
+    "Menu": {
+      "home": "Trang chủ",
+      "about_us": "Về chúng tôi",
+      "our_process": "Quy trình",
+      "our_history": "Lịch sử",
+      "contact_us": "Liên hệ"
     }
   }

@@ -35,7 +35,7 @@ const config: Config = {
       animation: {
         wiggle: 'wiggle 4s ease-in-out infinite',
         wiggle2: 'wiggle2 6s ease-in-out infinite',
-      }
+      },
     },
   },
   plugins: [],
