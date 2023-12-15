@@ -42,7 +42,7 @@ const Section2 = () => {
       </div>
       <div className="w-2/5 flex items-start gap-4 justify-center flex-col">
         <Image
-          src={"/products/Main-home-img17.jpg"}
+          src={"/Kimen/fragrance.jpeg"}
           width={300}
           height={100}
           sizes="100vw"

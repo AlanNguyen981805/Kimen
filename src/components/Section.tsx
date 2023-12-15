@@ -13,7 +13,7 @@ const Section = () => {
     <div className="w-full flex px-[80px]">
       <div className="w-3/5 relative">
         <Image
-          src={"/products/Main-home-img1.jpg"}
+          src={"/Kimen/OTHER.webp"}
           width={300}
           height={100}
           sizes="100vw"

@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div className="flex-col flex items-center justify-center h-[600px] ">
         <Image
-          src={"/products/product1.png"}
+          src={"/Kimen/bap-cai.webp"}
           width={200}
           height={100}
           alt="Product1"
@@ -21,7 +21,7 @@ const Home = () => {
           className="absolute right-[18%] top-[20%] animate-wiggle2"
         />
         <Image
-          src={"/products/product3.png"}
+          src={"/Kimen/cu-gung.jpg"}
           width={250}
           height={100}
           alt="Product3"
@@ -35,7 +35,7 @@ const Home = () => {
           className="absolute right-[12%] top-[12%] animate-wiggle2"
         />
         <Image
-          src={"/products/product5.png"}
+          src={"/Kimen/bap-cai.webp"}
           width={250}
           height={100}
           alt="Product5"
@@ -53,6 +53,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+
       <Section />
 
       <Section2 />
@@ -68,7 +69,7 @@ const Home = () => {
         <Process />
       </div>
 
-      <Section3 image="/products/Main-home-img4.jpg" />
+      <Section3 image="/Kimen/OTHER.webp" />
 
       <Section3 image="/products/Main-home-img4.jpg" reverse />
     </>
