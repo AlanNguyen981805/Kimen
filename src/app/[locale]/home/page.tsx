@@ -7,32 +7,32 @@ const Home = () => {
     <>
       <div className="flex-col flex items-center justify-center h-[600px] ">
         <Image
-          src={"/Kimen/bap-cai.webp"}
+          src={"/Kimen/hinh_2.png"}
           width={200}
           height={100}
           alt="Product1"
           className="absolute -right-2"
         />
-        <Image
+        {/* <Image
           src={"/products/product2.png"}
           width={100}
           height={100}
           alt="Product2"
           className="absolute right-[18%] top-[20%] animate-wiggle2"
-        />
-        <Image
-          src={"/Kimen/cu-gung.jpg"}
+        /> */}
+        {/* <Image
+          src={"/Kimen/hinh_3.jpeg"}
           width={250}
           height={100}
           alt="Product3"
           className="absolute right-[60%] top-0"
-        />
+        /> */}
         <Image
-          src={"/products/product4.png"}
-          width={100}
+          src={"/Kimen/hinh_1.jpg"}
+          width={150}
           height={100}
           alt="Product4"
-          className="absolute right-[12%] top-[12%] animate-wiggle2"
+          className="absolute right-[14%] top-[12%] animate-wiggle2"
         />
         <Image
           src={"/Kimen/bap-cai.webp"}
@@ -44,22 +44,37 @@ const Home = () => {
 
         <div className="flex items-center flex-col justify-center">
           <span className="italic text-[23px] text-[#4b4b4b]">
-            The taste of nature
+            Creating aroma of nature
           </span>
-          <h1 className="text-[60px] tracking-[8px]">ORGANIC FOOD</h1>
+          <h1 className="text-[60px] tracking-[8px]">FLAVOUR & FRAGRANCE</h1>
           <p className="text-[21px] text-[#4b4b4b] w-3/5 font-thin  text-center">
-            Our organic garden is the best choice for a healthy lifestyle.
-            Quality organic produce with no additives.
+            Kimen is the best choice for happlier , energy , healthier lives
+            with quanlity products
           </p>
         </div>
       </div>
 
-      <Section />
+      <Section
+        cate="FLAVOUR"
+        title="Unlimited - Enjoy Sensory Experiences"
+        desc="Co-operate with one of the leading Spanish manufacturers of flavours for the food sector, with more than half a century of experience designing and making sweet and savory flavours Natural , full certificate ,water soluble ,oil soluble, emulsion , powder form"
+        urlImage="/Kimen/hinh_4.jpg"
+      />
 
-      <Section2 />
+      <Section2
+        cate="FRAGRANCE"
+        title="Innovation – subtle and elegant"
+        imgUrl="/Kimen/hinh_5.jpg"
+        desc="The art of fragrance composition is intimately associated with the world of luxury and sophistication. Premium fragrances move and send positive messages, delivering true olfactory experiences. Co-operate with one of big group France manufactures of fragrances for personal care, aircare and home care"
+      />
 
       <div className="mt-16">
-        <Section />
+        <Section
+          cate="OTHERS"
+          title="ESSENTIAL OILS"
+          desc="There are numerous essential oils, each with its own unique scent and potential benefits. Examples include lavender, peppermint, eucalyptus, tea tree, chamomile, and ylang ylang..."
+          urlImage="/Kimen/OTHER.webp"
+        />
       </div>
 
       <div className="flex flex-col justify-center items-center py-[100px] bg-[#F3EEE9] mt-20">
@@ -69,9 +84,36 @@ const Home = () => {
         <Process />
       </div>
 
-      <Section3 image="/Kimen/OTHER.webp" />
+      <Section3
+        image="/Kimen/hinh_6.jpg"
+        cate="Certificate flavour"
+        title=""
+        listItem={[
+          "HALAL",
+          "FSSC 22000",
+          "ISO 9001",
+          "KOSHER",
+          "VEGAN CERTIFICATE",
+          "NATURAL FLAVOUR",
+        ]}
+      />
 
-      <Section3 image="/products/Main-home-img4.jpg" reverse />
+      <Section3
+        title=""
+        cate="Certificate of fragrance"
+        image="/Kimen/hinh_7.jpg"
+        listItem={[
+          "COA",
+          "SDS",
+          "Technical specifications",
+          "Purity certificate",
+          "Naturalness certificate",
+          "IFRA certificate",
+          "Certificate of compliance with the Cosmetics Directive 76/768/EEC.",
+          "Cosmetic allergens certificate - Cosmetics Directive 2003/15/EEC.",
+        ]}
+        reverse
+      />
     </>
   );
 };

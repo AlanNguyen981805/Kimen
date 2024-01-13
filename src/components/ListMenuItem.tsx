@@ -10,9 +10,7 @@ import { RenderTitleMenu } from ".";
 const Menu = () => {
   const pathname = usePathname();
   const tMenu = useTranslations('Menu')
-  // const headersList = headers();
 
-  // console.log('headersList.get("x-pathname") :>> ', headersList.get('x-pathname'));
   return (
     <>
       {MENUS.map((menu) => (
@@ -28,7 +26,6 @@ const Menu = () => {
           )}
         >
           {tMenu(menu.title)}
-          {/* <RenderTitleMenu title={menu.title} /> */}
         </Link>
       ))}
     </>

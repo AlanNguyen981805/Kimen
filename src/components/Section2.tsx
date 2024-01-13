@@ -1,7 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-const Section2 = () => {
+interface IProps {
+  title: string;
+  cate: string;
+  desc: string;
+  imgUrl: string;
+}
+
+const Section2 = ({ cate, desc, title, imgUrl }: IProps) => {
     const BenefitBox = ({icon, name}: {icon: string; name: string}) => {
         return (
             <div className="flex justify-center items-center flex-col w-1/2 mb-6">
@@ -19,15 +26,14 @@ const Section2 = () => {
   return (
     <div className="w-full flex px-[80px] mt-16">
       <div className="w-3/5 relative mx-auto flex justify-center">
-        <div className="max-w-[370px]">
+        <div className="max-w-[400px]">
           <div>
             <span className="text-xl text-[#4b4b4b] italic">
-              Tasty and fresh greens
+              {cate}
             </span>
-            <h4 className="text-3xl tracking-[8px]">ORGANIC FOOD</h4>
+            <h4 className="text-3xl">{title}</h4>
             <p className="text-[#6B6B6B] tracking-[1px] font-thin">
-              Sed ut perspiciati aperiam unde omnisiste voluptatem accusantium
-              dolorem que ladan tiumus dolor.
+              {desc}
             </p>
           </div>
           <div className="flex flex-wrap mt-10">
@@ -42,7 +48,7 @@ const Section2 = () => {
       </div>
       <div className="w-2/5 flex items-start gap-4 justify-center flex-col">
         <Image
-          src={"/Kimen/fragrance.jpeg"}
+          src={imgUrl}
           width={300}
           height={100}
           sizes="100vw"
