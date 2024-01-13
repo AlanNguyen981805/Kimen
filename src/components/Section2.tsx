@@ -19,7 +19,7 @@ const Section2 = ({ cate, desc, title, imgUrl }: IProps) => {
                 height={30}
                 priority
               />
-              <span className="mt-5 block tracking-[3px]">{name}</span>
+              <span className="mt-5 block tracking-[3px]">{name.toUpperCase()}</span>
             </div>
         )
     }
@@ -37,12 +37,12 @@ const Section2 = ({ cate, desc, title, imgUrl }: IProps) => {
             </p>
           </div>
           <div className="flex flex-wrap mt-10">
-            <BenefitBox icon={'/svgs/grow.svg'} name="GROWING" />
-            <BenefitBox icon={'/svgs/sodium.svg'} name="NO SODIUM" />
-            <BenefitBox icon={'/svgs/ecological.svg'} name="ECOLOGICAL" />
-            <BenefitBox icon={'/svgs/friendly.svg'} name="FRIENDLY" />
-            <BenefitBox icon={'/svgs/water.svg'} name="WATERING" />
-            <BenefitBox icon={'/svgs/organic.svg'} name="ORGANIC" />
+            <BenefitBox icon={'/svgs/grow.svg'} name="Natural" />
+            <BenefitBox icon={'/svgs/sodium.svg'} name="non GMO" />
+            <BenefitBox icon={'/svgs/ecological.svg'} name="non Allergen" />
+            <BenefitBox icon={'/svgs/friendly.svg'} name="organic" />
+            <BenefitBox icon={'/svgs/water.svg'} name="function" />
+            <BenefitBox icon={'/svgs/organic.svg'} name="healthy" />
           </div>
         </div>
       </div>

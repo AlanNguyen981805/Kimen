@@ -5,7 +5,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="flex-col flex items-center justify-center h-[600px] ">
+      <div className="flex-col flex items-center justify-center h-[600px] -mb-[60px]">
         <Image
           src={"/Kimen/hinh_2.png"}
           width={200}
@@ -44,22 +44,15 @@ const Home = () => {
 
         <div className="flex items-center flex-col justify-center">
           <span className="italic text-[23px] text-[#4b4b4b]">
-            Creating aroma of nature
+          Creating aroma of nature
           </span>
-          <h1 className="text-[60px] tracking-[8px]">FLAVOUR & FRAGRANCE</h1>
           <p className="text-[21px] text-[#4b4b4b] w-3/5 font-thin  text-center">
             Kimen is the best choice for happlier , energy , healthier lives
             with quanlity products
           </p>
+          <h1 className="text-[60px] tracking-[8px]">FLAVOUR & FRAGRANCE</h1>
         </div>
       </div>
-
-      <Section
-        cate="FLAVOUR"
-        title="Unlimited - Enjoy Sensory Experiences"
-        desc="Co-operate with one of the leading Spanish manufacturers of flavours for the food sector, with more than half a century of experience designing and making sweet and savory flavours Natural , full certificate ,water soluble ,oil soluble, emulsion , powder form"
-        urlImage="/Kimen/hinh_4.jpg"
-      />
 
       <Section2
         cate="FRAGRANCE"
@@ -68,14 +61,21 @@ const Home = () => {
         desc="The art of fragrance composition is intimately associated with the world of luxury and sophistication. Premium fragrances move and send positive messages, delivering true olfactory experiences. Co-operate with one of big group France manufactures of fragrances for personal care, aircare and home care"
       />
 
-      <div className="mt-16">
+      <Section
+        cate="STORY OF KIMEN"
+        title="Unlimited - Enjoy Sensory Experiences"
+        desc="Co-operate with one of the leading Spanish manufacturers of flavours for the food sector, with more than half a century of experience designing and making sweet and savory flavours Natural , full certificate ,water soluble ,oil soluble, emulsion , powder form"
+        urlImage="/Kimen/hinh_4.jpg"
+      />
+
+      {/* <div className="mt-16">
         <Section
           cate="OTHERS"
           title="ESSENTIAL OILS"
           desc="There are numerous essential oils, each with its own unique scent and potential benefits. Examples include lavender, peppermint, eucalyptus, tea tree, chamomile, and ylang ylang..."
           urlImage="/Kimen/OTHER.webp"
         />
-      </div>
+      </div> */}
 
       <div className="flex flex-col justify-center items-center py-[100px] bg-[#F3EEE9] mt-20">
         <span className="text-xl">The cultivation process</span>
