@@ -12,10 +12,30 @@ const OurHistory = () => {
         <Process />
       </div>
 
-      <Section />
-      <Section2 />
-      <Section />
-      <Section2 />
+      <Section
+        cate="FLAVOUR"
+        title="Unlimited - Enjoy Sensory Experiences"
+        desc="Co-operate with one of the leading Spanish manufacturers of flavours for the food sector, with more than half a century of experience designing and making sweet and savory flavours Natural , full certificate ,water soluble ,oil soluble, emulsion , powder form"
+        urlImage="/Kimen/hinh_4.jpg"
+      />
+      <Section2
+        cate="FRAGRANCE"
+        title="Innovation – subtle and elegant"
+        imgUrl="/Kimen/hinh_5.jpg"
+        desc="The art of fragrance composition is intimately associated with the world of luxury and sophistication. Premium fragrances move and send positive messages, delivering true olfactory experiences. Co-operate with one of big group France manufactures of fragrances for personal care, aircare and home care"
+      />
+      <Section
+        cate="FLAVOUR"
+        title="Unlimited - Enjoy Sensory Experiences"
+        desc="Co-operate with one of the leading Spanish manufacturers of flavours for the food sector, with more than half a century of experience designing and making sweet and savory flavours Natural , full certificate ,water soluble ,oil soluble, emulsion , powder form"
+        urlImage="/Kimen/hinh_4.jpg"
+      />
+      <Section2
+        cate="FRAGRANCE"
+        title="Innovation – subtle and elegant"
+        imgUrl="/Kimen/hinh_5.jpg"
+        desc="The art of fragrance composition is intimately associated with the world of luxury and sophistication. Premium fragrances move and send positive messages, delivering true olfactory experiences. Co-operate with one of big group France manufactures of fragrances for personal care, aircare and home care"
+      />
     </div>
   );
 };
