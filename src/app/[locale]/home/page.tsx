@@ -47,18 +47,17 @@ const Home = () => {
           Creating aroma of nature
           </span>
           <p className="text-[21px] text-[#4b4b4b] w-3/5 font-thin  text-center">
-            Kimen is the best choice for happlier , energy , healthier lives
-            with quanlity products
+            Crafting the essence of nature, Kimen stands out as the optimal selection for fostering happiness, vitality, and healthier lifestyles through premium-quality products.
           </p>
-          <h1 className="text-[60px] tracking-[8px]">FLAVOUR & FRAGRANCE</h1>
+          <h1 className="text-[60px] tracking-[8px] mt-5">FLAVOUR & FRAGRANCE</h1>
         </div>
       </div>
 
       <Section2
         cate="FRAGRANCE"
-        title="Innovation – subtle and elegant"
+        title="Innovation"
         imgUrl="/Kimen/hinh_5.jpg"
-        desc="The art of fragrance composition is intimately associated with the world of luxury and sophistication. Premium fragrances move and send positive messages, delivering true olfactory experiences. Co-operate with one of big group France manufactures of fragrances for personal care, aircare and home care"
+        desc="Welcome to our world of innovation, where subtlety meets elegance. The art of fragrance composition intertwines with luxury and sophistication, as premium scents convey positive messages, offering genuine olfactory experiences. Partner with a leading French manufacturer in the fragrance industry, specializing in personal care, aircare, and home care."
       />
 
       <Section
@@ -77,16 +76,16 @@ const Home = () => {
         />
       </div> */}
 
-      <div className="flex flex-col justify-center items-center py-[100px] bg-[#F3EEE9] mt-20">
+      {/* <div className="flex flex-col justify-center items-center py-[100px] bg-[#F3EEE9] mt-20">
         <span className="text-xl">The cultivation process</span>
         <h3 className="text-[36px] tracking-[3px]">OUR GARDEN PROGRESS</h3>
 
         <Process />
-      </div>
+      </div> */}
 
       <Section3
         image="/Kimen/hinh_6.jpg"
-        cate="Certificate flavour"
+        cate="Flavor Certifications:"
         title=""
         listItem={[
           "HALAL",
@@ -100,7 +99,7 @@ const Home = () => {
 
       <Section3
         title=""
-        cate="Certificate of fragrance"
+        cate="Fragrance Certifications:"
         image="/Kimen/hinh_7.jpg"
         listItem={[
           "COA",
@@ -113,6 +112,13 @@ const Home = () => {
           "Cosmetic allergens certificate - Cosmetics Directive 2003/15/EEC.",
         ]}
         reverse
+      />
+      <Section3
+        title="Discover Pure Essence with Our Essential Oils"
+        cate="ESSENTIAL OILS:"
+        image="/Kimen/hinh_7.jpg"
+        listItem={[]}
+        desc="Unveil the essence of nature with our premium essential oils, sourced from a trusted US supplier. From soothing lavender to invigorating citrus blends, each bottle embodies the highest quality. Elevate your senses and well-being with KIMEN"
       />
     </>
   );

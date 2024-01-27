@@ -24,7 +24,7 @@ const Section2 = ({ cate, desc, title, imgUrl }: IProps) => {
         )
     }
   return (
-    <div className="w-full flex px-[80px] mt-16">
+    <div className="w-full flex px-[80px] mt-4">
       <div className="w-3/5 relative mx-auto flex justify-center">
         <div className="max-w-[400px]">
           <div>

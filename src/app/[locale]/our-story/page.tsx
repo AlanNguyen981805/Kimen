@@ -26,11 +26,19 @@ const AboutUs = () => {
           alt="about-us"
         />
         <div className="z-10 text-center">
-          <p className="text-xl text-[#737373]">More to know</p>
-          <h3 className="text-4xl text-[#000] tracking-[6px]">ABOUT US</h3>
+          {/* <p className="text-xl text-[#737373]">More to know</p> */}
+          <h3 className="text-6xl font-bold text-[#fff] tracking-[6px]">ABOUT US</h3>
         </div>
       </div>
 
+      <div className="w-full mt-4">
+        <div className="w-2/3">
+          <p>Our journey began in 2022, ignited by an ardent love for flavor, fragrance, and essential elements. With a wealth of experience exceeding a decade in commerce and consultancy for aromatic solutions, our founder has steadfastly guided clients in creating distinctive and successful products for both local and global markets.
+          We firmly believe that triumph in the essential realm of flavors and fragrances transcends mere sales tactics; it demands an artful blend of passion and aesthetic discernment. Serving as dedicated representatives for prominent flavor and fragrance brands in Vietnam, we take pride in being dependable partners.
+          Fueled by an unwavering commitment to perpetual learning and innovation, we pledge holistic solutions, addressing every need and surmounting challenges you may encounter. Join us in crafting unparalleled experiences in flavor, fragrance, and essential elements, as we champion creativity and excellence together.
+          </p>
+        </div>
+      </div>
       <div className="flex py-28">
         <BenefitBox icon={"/svgs/grow.svg"} name="GROWING ORGANIC" />
         <BenefitBox icon={"/svgs/grow.svg"} name="HARVEST PLAN" />

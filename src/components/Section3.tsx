@@ -7,6 +7,7 @@ interface IProps {
   image: string;
   title: string;
   cate: string;
+  desc?: string;
   listItem: string[];
 }
 const Section3 = ({
@@ -15,6 +16,7 @@ const Section3 = ({
   image,
   listItem,
   title,
+  desc
 }: IProps) => {
   return (
     <div
@@ -39,14 +41,15 @@ const Section3 = ({
           height={200}
           alt="main"
         /> */}
-        <div className="max-w-[400px] flex gap-5">
+        <div className="max-w-[450px] flex gap-5">
           {/* <span className="flex">
             <span>$</span> <span className="text-6xl">29</span>
           </span> */}
           <div className="flex flex-col gap-4">
             <h4 className="text-4xl tracking-[2px]">{cate}</h4>
-            <p className="text-[#6B6B6B] text-lg">{title} </p>
-            <ol>
+            <p className="text-[#6B6B6B] text-lg">{title}</p>
+            {listItem.length > 0 && (
+              <ol>
               {
                 listItem.map((item, index) => {
                   return (
@@ -55,6 +58,10 @@ const Section3 = ({
                 })
               }
             </ol>
+            )}
+            {desc && (
+              <p>{desc}</p>
+            )}
           </div>
         </div>
       </div>

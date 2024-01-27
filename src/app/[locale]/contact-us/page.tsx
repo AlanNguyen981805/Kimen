@@ -16,7 +16,7 @@ const ContactUs = () => {
           <h3 className="text-4xl text-[#000] tracking-[6px] uppercase">CONTACT US</h3>
         </div>
       </div>
-      <div className="w-[1400px] mt-20 mx-auto flex gap-20">
+      <div className="w-[1400px] mt-28 mx-auto flex gap-20">
         <div className="w-1/2 h-[400px]">
           <Map />
         </div>

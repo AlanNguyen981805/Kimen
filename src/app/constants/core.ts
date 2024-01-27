@@ -1,8 +1,8 @@
 export type ILink =
   | "/home"
-  | "/about-us"
+  | "/our-story"
   | "/our-product"
-  | "/our-brand"
+  | "/kimens-brand"
   | "/contact-us";
 
 export type IMenu = {
@@ -19,8 +19,8 @@ export const MENUS: IMenu[] = [
   },
   {
     key: 2,
-    title: "about_us",
-    link: "/about-us",
+    title: "our_story",
+    link: "/our-story",
   },
   {
     key: 3,
@@ -29,8 +29,8 @@ export const MENUS: IMenu[] = [
   },
   {
     key: 4,
-    title: "our_brand",
-    link: "/our-brand",
+    title: "kimens_brand",
+    link: "/kimens-brand",
   },
   {
     key: 4,
