@@ -77,11 +77,18 @@ const Home = () => {
           "Cosmetic allergens certificate - Cosmetics Directive 2003/15/EEC.",
         ]}
       />
+      <Section2
+        cate="FLAVOUR"
+        title="Discover Flavors with Us!"
+        imgUrl="/Kimen/hinh_4.jpg"
+        isShowList={false}
+        desc="Delve into the world of flavor, a key protagonist in life's rich tapestry, especially within the vibrant Food and Beverage industry. As proud representatives of a distinguished Spanish flavor house, we bring the essence of Spain's culinary artistry to your palate. Explore the significance of taste and embark on a sensory journey with us, where every flavor becomes a cherished memory."
+      />
 
       <Section3
-        image="/Kimen/hinh_6.jpg"
-        cate="Flavor Certifications:"
         title=""
+        cate="Flavor Certifications:"
+        image="/Kimen/hinh_6.jpg"
         listItem={[
           "HALAL",
           "FSSC 22000",
@@ -90,33 +97,7 @@ const Home = () => {
           "VEGAN CERTIFICATE",
           "NATURAL FLAVOUR",
         ]}
-        reverse
       />
-      <div className="py-4">
-        <Section2
-          cate="FLAVOUR"
-          title="Discover Flavors with Us!"
-          desc="Delve into the world of flavor, a key protagonist in life's rich tapestry, especially within the vibrant Food and Beverage industry. As proud representatives of a distinguished Spanish flavor house, we bring the essence of Spain's culinary artistry to your palate. Explore the significance of taste and embark on a sensory journey with us, where every flavor becomes a cherished memory."
-          imgUrl="/Kimen/hinh_4.jpg"
-          isShowList={false}
-        />
-      </div>
-
-      {/* <div className="mt-16">
-        <Section
-          cate="OTHERS"
-          title="ESSENTIAL OILS"
-          desc="There are numerous essential oils, each with its own unique scent and potential benefits. Examples include lavender, peppermint, eucalyptus, tea tree, chamomile, and ylang ylang..."
-          urlImage="/Kimen/OTHER.webp"
-        />
-      </div> */}
-
-      {/* <div className="flex flex-col justify-center items-center py-[100px] bg-[#F3EEE9] mt-20">
-        <span className="text-xl">The cultivation process</span>
-        <h3 className="text-[36px] tracking-[3px]">OUR GARDEN PROGRESS</h3>
-
-        <Process />
-      </div> */}
 
       <Section2
         title="Discover Pure Essence with Our Essential Oils"
@@ -124,7 +105,6 @@ const Home = () => {
         imgUrl="/Kimen/oils.jpeg"
         desc="Unveil the essence of nature with our premium essential oils, sourced from a trusted US supplier. From soothing lavender to invigorating citrus blends, each bottle embodies the highest quality. Elevate your senses and well-being with KIMEN"
         isShowList={false}
-        revert
       />
 
       <div className="mt-10">
@@ -134,6 +114,7 @@ const Home = () => {
           desc="Welcome to Kimen Herb, where nature's finest essences come together to create a harmonious blend of aromatherapy oils designed to rejuvenate your mind, body, and soul. Our passion for harnessing the power of herbs and botanicals has led us to craft a range of ready-to-use aromatherapy oils that promise to elevate your sensory experience."
           imgUrl="/Kimen/hurb.png"
           isShowList={false}
+          revert
         />
       </div>
     </>

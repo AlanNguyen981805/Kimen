@@ -5,7 +5,7 @@ import React from "react";
 const AboutUs = () => {
   const BenefitBox = ({ icon, name, desc }: { icon: string; name: string, desc: string }) => {
     return (
-      <div className="flex justify-center px-14 items-center flex-col w-1/2 mb-6 ">
+      <div className="flex justify-center px-4 items-center flex-col w-1/2 mb-6 ">
         <Image src={icon} alt="Next.js Logo" width={60} height={30} priority />
         <span className="mt-5 block tracking-[3px] uppercase">{name}</span>
 
@@ -76,7 +76,7 @@ const AboutUs = () => {
 
       <div className="w-full h-[400px] relative mt-20">
         <Image
-          src={"/Kimen/Picture1.jpg"}
+          src={"/Kimen/bg-huong-lieu.png"}
           fill
           objectFit="cover"
           alt="About-us-img4"
