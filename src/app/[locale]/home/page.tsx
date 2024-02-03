@@ -63,6 +63,33 @@ const Home = () => {
       />
 
       <Section3
+        title=""
+        cate="Fragrance Certifications:"
+        image="/Kimen/hinh_7.jpg"
+        listItem={[
+          "COA",
+          "SDS",
+          "Technical specifications",
+          "Purity certificate",
+          "Naturalness certificate",
+          "IFRA certificate",
+          "Certificate of compliance with the Cosmetics Directive 76/768/EEC.",
+          "Cosmetic allergens certificate - Cosmetics Directive 2003/15/EEC.",
+        ]}
+        
+      />
+
+      <div className="py-4">
+      <Section2
+        cate="FLAVOUR"
+        title="Discover Flavors with Us!"
+        desc="Delve into the world of flavor, a key protagonist in life's rich tapestry, especially within the vibrant Food and Beverage industry. As proud representatives of a distinguished Spanish flavor house, we bring the essence of Spain's culinary artistry to your palate. Explore the significance of taste and embark on a sensory journey with us, where every flavor becomes a cherished memory."
+        imgUrl="/Kimen/hinh_4.jpg"
+        isShowList={false}
+      />
+      </div>
+
+      <Section3
         image="/Kimen/hinh_6.jpg"
         cate="Flavor Certifications:"
         title=""
@@ -74,14 +101,10 @@ const Home = () => {
           "VEGAN CERTIFICATE",
           "NATURAL FLAVOUR",
         ]}
+        reverse
       />
 
-      <Section
-        cate="FLAVOUR"
-        title="Discover Flavors with Us!"
-        desc="Delve into the world of flavor, a key protagonist in life's rich tapestry, especially within the vibrant Food and Beverage industry. As proud representatives of a distinguished Spanish flavor house, we bring the essence of Spain's culinary artistry to your palate. Explore the significance of taste and embark on a sensory journey with us, where every flavor becomes a cherished memory."
-        urlImage="/Kimen/hinh_4.jpg"
-      />
+      
 
       {/* <div className="mt-16">
         <Section
@@ -99,37 +122,24 @@ const Home = () => {
         <Process />
       </div> */}
 
-      <Section3
-        title=""
-        cate="Fragrance Certifications:"
-        image="/Kimen/hinh_7.jpg"
-        listItem={[
-          "COA",
-          "SDS",
-          "Technical specifications",
-          "Purity certificate",
-          "Naturalness certificate",
-          "IFRA certificate",
-          "Certificate of compliance with the Cosmetics Directive 76/768/EEC.",
-          "Cosmetic allergens certificate - Cosmetics Directive 2003/15/EEC.",
-        ]}
-        reverse
-      />
+      
       <Section3
         title="Discover Pure Essence with Our Essential Oils"
         cate="ESSENTIAL OILS:"
-        image="/Kimen/hinh_7.jpg"
+        image="/Kimen/oils.jpeg"
         listItem={[]}
         desc="Unveil the essence of nature with our premium essential oils, sourced from a trusted US supplier. From soothing lavender to invigorating citrus blends, each bottle embodies the highest quality. Elevate your senses and well-being with KIMEN"
       />
-      <Section3
-        title="KIMEN HERB"
-        cate="Where Nature Meets Serenity"
-        image="/Kimen/flavor-nature.jpeg"
-        listItem={[]}
-        reverse
-        desc="Welcome to Kimen Herb, where nature's finest essences come together to create a harmonious blend of aromatherapy oils designed to rejuvenate your mind, body, and soul. Our passion for harnessing the power of herbs and botanicals has led us to craft a range of ready-to-use aromatherapy oils that promise to elevate your sensory experience."
-      />
+
+      <div className="mt-10">
+        <Section2
+          cate="KIMEN HERB"
+          title="Where Nature Meets Serenity"
+          desc="Welcome to Kimen Herb, where nature's finest essences come together to create a harmonious blend of aromatherapy oils designed to rejuvenate your mind, body, and soul. Our passion for harnessing the power of herbs and botanicals has led us to craft a range of ready-to-use aromatherapy oils that promise to elevate your sensory experience."
+          imgUrl="/Kimen/hurb.png"
+          isShowList={false}
+        />
+      </div>
     </>
   );
 };

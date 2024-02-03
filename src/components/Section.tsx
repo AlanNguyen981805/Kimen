@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import React from "react";
 
@@ -6,11 +7,14 @@ interface IProps {
     cate: string;
     title: string;
     desc: string;
+    reverse?: boolean
 }
 
-const Section = ({ cate, desc, title, urlImage }: IProps) => {
+const Section = ({ cate, desc, title, urlImage, reverse = false }: IProps) => {
   return (
-    <div className="w-full flex px-[80px]">
+    <div className={classNames("w-full flex px-[80px]", {
+      "flex-row-reverse": reverse
+    })}>
       <div className="w-3/5 relative">
         <Image
           src={urlImage}
