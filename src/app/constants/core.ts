@@ -38,3 +38,10 @@ export const MENUS: IMenu[] = [
     link: "/contact-us",
   },
 ];
+
+export const INFO_WEBSITE = {
+  email: 'info@kimen.com.vn',
+  emaily: 'emaly.kim@kimen.com.vn',
+  phone: '(+84) 326 072 508',
+  address: 'ROOM 102 ¡ST FLOOR, HALO BUILDING, 39 DINH CONG TRANG, TAN DINH WARD, DISTRICT1, HCMC'
+}

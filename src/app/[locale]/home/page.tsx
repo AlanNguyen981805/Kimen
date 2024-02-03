@@ -44,12 +44,14 @@ const Home = () => {
 
         <div className="flex items-center flex-col justify-center">
           <span className="italic text-[23px] text-[#4b4b4b]">
-          Creating aroma of nature
+            Creating aroma of nature
           </span>
           <p className="text-[21px] text-[#4b4b4b] w-3/5 font-thin  text-center">
-            Crafting the essence of nature, Kimen stands out as the optimal selection for fostering happiness, vitality, and healthier lifestyles through premium-quality products.
+            Crafting the essence of nature, Kimen stands out as the optimal
+            selection for fostering happiness, vitality, and healthier
+            lifestyles through premium-quality products.
           </p>
-          <h1 className="text-[60px] tracking-[8px] mt-5">FLAVOUR & FRAGRANCE</h1>
+          <h1 className="text-[60px] tracking-[8px] mt-5">EXPLORING KIMEN</h1>
         </div>
       </div>
 
@@ -60,10 +62,24 @@ const Home = () => {
         desc="Welcome to our world of innovation, where subtlety meets elegance. The art of fragrance composition intertwines with luxury and sophistication, as premium scents convey positive messages, offering genuine olfactory experiences. Partner with a leading French manufacturer in the fragrance industry, specializing in personal care, aircare, and home care."
       />
 
+      <Section3
+        image="/Kimen/hinh_6.jpg"
+        cate="Flavor Certifications:"
+        title=""
+        listItem={[
+          "HALAL",
+          "FSSC 22000",
+          "ISO 9001",
+          "KOSHER",
+          "VEGAN CERTIFICATE",
+          "NATURAL FLAVOUR",
+        ]}
+      />
+
       <Section
-        cate="STORY OF KIMEN"
-        title="Unlimited - Enjoy Sensory Experiences"
-        desc="Co-operate with one of the leading Spanish manufacturers of flavours for the food sector, with more than half a century of experience designing and making sweet and savory flavours Natural , full certificate ,water soluble ,oil soluble, emulsion , powder form"
+        cate="FLAVOUR"
+        title="Discover Flavors with Us!"
+        desc="Delve into the world of flavor, a key protagonist in life's rich tapestry, especially within the vibrant Food and Beverage industry. As proud representatives of a distinguished Spanish flavor house, we bring the essence of Spain's culinary artistry to your palate. Explore the significance of taste and embark on a sensory journey with us, where every flavor becomes a cherished memory."
         urlImage="/Kimen/hinh_4.jpg"
       />
 
@@ -82,20 +98,6 @@ const Home = () => {
 
         <Process />
       </div> */}
-
-      <Section3
-        image="/Kimen/hinh_6.jpg"
-        cate="Flavor Certifications:"
-        title=""
-        listItem={[
-          "HALAL",
-          "FSSC 22000",
-          "ISO 9001",
-          "KOSHER",
-          "VEGAN CERTIFICATE",
-          "NATURAL FLAVOUR",
-        ]}
-      />
 
       <Section3
         title=""
@@ -119,6 +121,14 @@ const Home = () => {
         image="/Kimen/hinh_7.jpg"
         listItem={[]}
         desc="Unveil the essence of nature with our premium essential oils, sourced from a trusted US supplier. From soothing lavender to invigorating citrus blends, each bottle embodies the highest quality. Elevate your senses and well-being with KIMEN"
+      />
+      <Section3
+        title="KIMEN HERB"
+        cate="Where Nature Meets Serenity"
+        image="/Kimen/flavor-nature.jpeg"
+        listItem={[]}
+        reverse
+        desc="Welcome to Kimen Herb, where nature's finest essences come together to create a harmonious blend of aromatherapy oils designed to rejuvenate your mind, body, and soul. Our passion for harnessing the power of herbs and botanicals has led us to craft a range of ready-to-use aromatherapy oils that promise to elevate your sensory experience."
       />
     </>
   );
