@@ -5,8 +5,38 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderSlick from "react-slick";
 
+interface ICommentGuest {
+  title: string;
+  name: string;
+  answer: string;
+}
+
 const Slider = () => {
   const sliderRef = useRef<any>(null);
+
+  const comments = [
+    {
+      name: "Samantha Turner, CEO",
+      title: "Exceptional Scents",
+      answer: "Samantha Turner, our visionary CEO, leads us in curating exceptional scents sourced globally. Each fragrance is meticulously crafted to perfection, reflecting the essence of your brand and providing a sensory journey that transcends borders."
+    },
+    {
+      name: "David Chen, Sales Manager",
+      title: "Fragrance Journey",
+      answer: "Embark on a captivating fragrance journey with David Chen, our Sales Manager. At the intersection of quality and customization, we offer a unique experience where your individuality meets our commitment to excellence. Your fragrance story begins here."
+    },
+    {
+      name: "Alexandra Rodriguez, Head Perfumer",
+      title: "Crafting Scents",
+      answer: "Crafting scents that tell compelling stories is the expertise of Alexandra Rodriguez, our Head Perfumer. Each fragrance is an artful expression, embodying the heart of our commitment to excellence. Join us in experiencing the extraordinary world of fragrance."
+    },
+    {
+      name: "Michael Patel, Customer Relations",
+      title: "Global Community",
+      answer: "As the bridge connecting us with a global community, Michael Patel, our Customer Relations expert, emphasizes the power of testimonials. Join this trusting community and experience aromatic brilliance firsthand. Your trust speaks volumes, inviting you to explore the unparalleled world of fragrance."
+    },
+  ];
+  
 
   const settings = {
     dots: false,
@@ -15,18 +45,15 @@ const Slider = () => {
     slidesToScroll: 1,
   };
 
-  const CommetGuest = () => {
+  const CommetGuest = ({ answer, name, title }: ICommentGuest) => {
     return (
       <div className="w-4/6 flex flex-col items-center justify-center">
         <p className="text-lg font-thin text-center text-[#6B6B6B] tracking-[1px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo.
+          {answer}
         </p>
 
-        <p className="mt-8 text-xl tracking-[3px]">MACCO RIOC</p>
-        <span className="mt-4 text-[#4b4b4b] text-xl">Director</span>
+        <p className="mt-8 text-xl tracking-[3px]">{name}</p>
+        <span className="mt-4 text-[#4b4b4b] text-xl">{title}</span>
       </div>
     );
   };
@@ -48,21 +75,11 @@ const Slider = () => {
 
         </button>
         <SliderSlick {...settings} ref={sliderRef}>
-          <div className="!flex items-center justify-center">
-            <CommetGuest />
+        {comments.map((comment, index) => (
+          <div className="!flex items-center justify-center" key={index}>
+            <CommetGuest answer={comment.answer} name={comment.name} title={comment.title} />
           </div>
-
-          <div className="!flex items-center justify-center">
-            <CommetGuest />
-          </div>
-
-          <div className="!flex items-center justify-center">
-            <CommetGuest />
-          </div>
-
-          <div className="!flex items-center justify-center">
-            <CommetGuest />
-          </div>
+        ))}
         </SliderSlick>
       </div>
     </div>

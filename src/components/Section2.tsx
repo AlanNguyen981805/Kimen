@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import React from "react";
 
@@ -7,9 +8,10 @@ interface IProps {
   desc: string;
   imgUrl: string;
   isShowList?: boolean;
+  revert?: boolean
 }
 
-const Section2 = ({ cate, desc, title, imgUrl, isShowList = true }: IProps) => {
+const Section2 = ({ cate, desc, title, imgUrl, isShowList = true, revert=false }: IProps) => {
   const BenefitBox = ({ icon, name }: { icon: string; name: string }) => {
     return (
       <div className="flex justify-center items-center flex-col w-1/2 mb-6">
@@ -19,7 +21,9 @@ const Section2 = ({ cate, desc, title, imgUrl, isShowList = true }: IProps) => {
     );
   };
   return (
-    <div className="w-full flex px-[80px] mt-4">
+    <div className={classNames("w-full flex px-[80px] mt-4", {
+      "flex-row-reverse": revert
+    })}>
       <div className="w-1/2 relative mx-auto flex justify-center items-center">
         <div className="max-w-[400px]">
           <div>
