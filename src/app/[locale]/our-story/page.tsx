@@ -11,6 +11,7 @@ const AboutUs = () => {
 
         <p className="text-center text-[#6B6B6B] text-base pt-3">
           {desc}
+          cong hoa xa hoi chu nghia viet nam
         </p>
       </div>
     );
