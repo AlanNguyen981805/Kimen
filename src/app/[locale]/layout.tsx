@@ -11,9 +11,10 @@ export default function LocaleLayout({ children, params }: any) {
   return (
     <html lang={params.locale}>
       <body>
-        <div className="flex items-center justify-center h-[500px]">
+        <div>
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
